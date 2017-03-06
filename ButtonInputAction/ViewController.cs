@@ -21,5 +21,10 @@ namespace ButtonInputAction
             base.DidReceiveMemoryWarning();
             // Release any cached data, images, etc that aren't in use.
         }
+
+		partial void OnButtonTap(Foundation.NSObject sender)
+		{
+			this.labelStatus.Text = "Button tapped!";
+		}
     }
 }
